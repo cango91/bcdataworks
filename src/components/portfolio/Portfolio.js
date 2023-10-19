@@ -2,8 +2,12 @@ import React from 'react';
 import PortfolioBlock from "./PortfolioBlock";
 import {Box, Grid} from "@mui/material";
 import {info} from "../../info/Info.en";
+import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
+    const {t, i18n} = useTranslation();
+    const lang = i18n.language;
+    const info = require(`../../info/Info.${lang}.js`).info;
     return (
         <Box>
             <Grid container display={'flex'} justifyContent={'center'} marginTop={"10px"} alignItems={"center"}>

@@ -26,18 +26,18 @@ export const info = {
     firstName: "Burak",
     lastName: "Ceylan",
     initials: "bc", // the example uses first and last, but feel free to use three or more if you like.
-    position: "Analist ve veri bilimciyim",
+    position: "analist ve veri bilimciyim",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '🌎',
-            text: 'Türkiye'
+            text: 'Türkiye\'de'
         },
         {
             emoji: "💼",
-            text: "Enpara.com'da analitik yöneticisi"
+            text: "enpara.com'da analitik müdürü"
         },
         {
             emoji: "📧",
@@ -74,7 +74,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Merhaba! Adım Burak CEYLAN. Enpara.com'da Analitik Yöneticisiyim. Marmara Universitesi'nde Ekonometri okudum ve İşletme Finansı'nda master yaptım. 'Uluslararası Ticarette Rekabet ve Kurumsal Yönetişim Kavramlarının Hisse Senedi Getirileri Üzerindeki Etkileri' kitabının yazarıyım.",
+    bio: "Hello! I’m Burak CEYLAN. I’am an analytics manager for Enpara.com. I studied Econometrics at Marmara Uni and I am Msc in BA-Finance. I am the author of “Uluslararası Ticarette Rekabet ve Kurumsal Yönetişim Kavramlarının Hisse Senedi Getirileri Üzerindeki Etkileri”.",
     skills:
     {
         proficientWith: ['Python', 'SQL', 'IBM SPSS', 'Stata', 'Eviews','R'],
@@ -83,15 +83,15 @@ export const info = {
     ,
     hobbies: [
         {
-            label: 'ekonomi',
+            label: 'economics',
             emoji: '💹'
         },
         {
-            label: 'felsefe',
+            label: 'philosophy',
             emoji: '🧐'
         },
         {
-            label: 'tarih',
+            label: 'history',
             emoji: '🎥'
         },
 
@@ -100,41 +100,41 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Bankacılıkta Kredi Riski Analitiği ve Tahmin",
+            title: "Credit Risk Analytics and Forecasting in Banking",
             live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1,
-            description: 'Müşteri kredi skorları üzerinden C-level Yönetimi bankanın kredi riskine dair bilgilendirme',
+            description: 'Informing the C-level management about the bank\'s risk based on customers\' credit scores.',
         },
         {
-            title: "Bankacılıkta Risk İzleme ve Modelleme",
+            title: "Risk Monitoring and Modelling in Banking",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock2,
-            description: 'Erken uyarı sisteminin yönetimi ve analitik çalışmaların yürütülmesi',
+            description: 'Analytical studies conducted for the management of the early warning system and the necessary actions.',
         },
         {
-            title: "Tarımda Müşteri Davranış Modellemesi",
+            title: "Customer Behavior Modelling in Agriculture",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock3,
-            description: 'CRM stratejilerinin geliştirilmesi, pazarlama analitiği ve müşteri segmentasyonları ile müşteri hayat yolculuğunun tasarımı',
+            description: 'Developing crm strategies, and also marketing analytics, designing customer journeys and segmentations.',
         },
         {
-            title: "Sağlıkta IK Analitği ve ArGe Proje Yönetimi",
+            title: "HR Analytics and R&D Project Management in Healthcare",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock4,
-            description: 'IK ve sağlıkta dijitalleştirme projelerinin yönetimi ve işgücü analizleriyle optimizasyon çalışmalarının yürütülmesi',
+            description: 'Conducting HR and Healthcare projects, analyzing workforce management and optimization, developing business process.',
         },
         {
-            title: "Sigorta Sektöründe Kayıp/Zarar Analizleri",
+            title: "Loss Adjustment Analysis in Insurance Industry",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock5,
-            description: 'Termik enerji santralleri, stadyumlar, barajlar ve rüzgar türbinlerinin risk ve hasar analizlerinin yapılması',
+            description: 'Loss Adjustment and Risk Analysis for thermal power plants, stadiums, dams, wind turbines, etc.',
         }
     ],
-    collabs: ["IBM SPSS ile Akademiz Tez Danışmanlığı", "Süreç Yönetimi ve Optimizasyon Danışmanlığı", "Müşteri Davranış Analizi ve Segmentasyon", "Risk Segmentasyonu ve Tahmin", "Zaman Serisi Analizi Danışmanlığı"],
-    courses: ["Makine Öğrenmesi Modellemesi (Kümeleme, Sınıflandırma ve Regresyon)", "Python ile İstatistik101'den Makine Öğrenmesine Modelleme", "SQL ve Python ile İş Analitikleri Kursu", "SPSS/Eviews ile Akademik İstatistik Test Kursu", "SPSS/Eviews/Python ile Zaman Serileri Analizi Kursu "],
+    collabs: ["Academic Thesis Consultancy for IBM SPSS", "Process Management and Optimization Consultancy", "Customer Behavior Analysis and Segmentation", "Risk Segmentation and Forecasting", "Times Series Analysis Consultancy"],
+    courses: ["Machine Learning Modelling (Clustering, Classification and Regression)", "From Statistics101 to Machine Learning with Python Courses", "Business Analytics Course with SQL and Python", "Academical Statistics Test Course with SPSS/Eviews", "Times Series Analysis with SPSS/Eviews/Python"],
 }
