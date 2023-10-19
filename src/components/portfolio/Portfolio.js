@@ -4,7 +4,7 @@ import {Box, Grid} from "@mui/material";
 import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
     const lang = i18n.language;
     const info = require(`../../info/Info.${lang}.js`).info;
     return (
