@@ -1,0 +1,18 @@
+{
+    "welcome": "Merhaba, ben",
+    "position": "",
+    "home": "Ana Sayfa",
+    "about me": "Hakkımda",
+    "portfolio": "Portfolyo",
+    "services": "Hizmetler",
+    "about": "cat {{firstname}}hakkında",
+    "about static": "{{firstname}}hakkında",
+    "cd skills": "cd beceriler/araçlar",
+    "skills": "beceriler/araçlar",
+    "proficient with": "Etkin",
+    "exposed to": "Aşina",
+    "cd hobbies": "cd hobiler/ilgi alanları",
+    "hobbies": "hobiler/ilgi alanları",
+    "collaborations": "İşbirlikleri",
+    "courses": "Kurslar"
+}

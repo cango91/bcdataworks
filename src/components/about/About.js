@@ -1,18 +1,22 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box} from "@mui/material";
-import {info} from "../../info/Info";
+import {Box, Grid} from "@mui/material";
+import {info} from "../../info/Info.en";
+import Book from '../../img/book.jpeg';
+import { useTranslation } from 'react-i18next';
 
 
 export default function About() {
-    const firstName = info.firstName.toLowerCase()
+    const {t, i18n} = useTranslation();
+    const lang = i18n.language;
+    const info = require(`../../info/Info.${lang}.js`).info;
+    const firstName = info.firstName.toLowerCase();
 
     function aboutMeText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
-                about{firstName} </p>
-            <p><span style={{color: info.baseColor}}>about{firstName} <span
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> {t('about', {firstname: firstName})}</p>
+            <p><span style={{color: info.baseColor}}>{t('about static', {firstname: firstName})}<span
                 className={Style.green}>(main)</span> $ </span>
                 {info.bio}
             </p>
@@ -21,15 +25,15 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> {t("cd skills")}
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.baseColor}}>{t("skills")} <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <p style={{color: info.baseColor}}> Proficient With</p>
+            <p style={{color: info.baseColor}}> {t('proficient with')}</p>
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
+            <p style={{color: info.baseColor}}> {t('exposed to')}</p>
             <ul className={Style.skills}>
                 {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
@@ -38,9 +42,8 @@ export default function About() {
 
     function miscText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-                hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> {t('cd hobbies')}</p>
+            <p><span style={{color: info.baseColor}}>{t('hobbies')} <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
@@ -55,6 +58,13 @@ export default function About() {
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>
+            <Box display="flex" justifyContent="center" alignItems="center" marginTop={4}>
+                <Grid container justify="center">
+                    <Grid item xs={12}>
+                        <img src={Book} alt="Description" style={{ maxWidth: "100%", height: "auto" }} />
+                    </Grid>
+                </Grid>
+            </Box>
         </Box>
     )
 }

@@ -1,0 +1,18 @@
+{
+    "welcome": "Hi, I'm",
+    "position": "I'm",
+    "home": "Home",
+    "about me": "About Me",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "cat about{{firstname}}",
+    "about static": "about{{firstname}}",
+    "cd skills": "cd skills/tools",
+    "skills": "skills/tools",
+    "proficient with": "Proficient With",
+    "exposed to": "Exposed To",
+    "cd hobbies": "cd hobbies/interests",
+    "hobbies": "hobbies/interests",
+    "collaborations": "Collaborations",
+    "courses": "Courses"
+}
