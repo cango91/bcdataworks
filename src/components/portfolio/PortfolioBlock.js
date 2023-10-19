@@ -1,10 +1,9 @@
 import React from 'react';
-import IconLink from "./IconLink";
 import Style from './portfolio.module.scss';
 import {Box} from "@mui/material";
 
 function PortfolioBlock(props) {
-   const {image, live, source, title, description} = props;
+   const {image,title, description} = props;
    return (
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
          <Box component={'img'} className={Style["Portfolio-Image"]} src={image} alt={'mockup'} />

@@ -1,6 +1,4 @@
 import { Box, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
-import Style from '../portfolio/portfolio.module.scss';
-import {info} from '../../info/Info.en';
 import { useTranslation } from "react-i18next";
 
 export default function Services() {

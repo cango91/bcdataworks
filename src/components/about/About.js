@@ -2,7 +2,6 @@ import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box, Grid} from "@mui/material";
-import {info} from "../../info/Info.en";
 import Book from '../../img/book.jpeg';
 import { useTranslation } from 'react-i18next';
 
