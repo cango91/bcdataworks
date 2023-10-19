@@ -121,7 +121,7 @@ export const info = {
             description: 'CRM stratejilerinin geliştirilmesi, pazarlama analitiği ve müşteri segmentasyonları ile müşteri hayat yolculuğunun tasarımı',
         },
         {
-            title: "Sağlıkta IK Analitği ve ArGe Proje Yönetimi",
+            title: "Sağlıkta IK Analitiği ve ArGe Proje Yönetimi",
             live: "https://paytonpierce.dev",
             source: "https://github.com/paytonjewell",
             image: mock4,

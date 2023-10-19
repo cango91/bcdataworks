@@ -20,7 +20,7 @@ i18n.use(initReactI18next)
       }
    },
    fallbackLng: 'en',
-   debug: true,
+   debug: false,
    react:{
       useSuspense: false,
    }

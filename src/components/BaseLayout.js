@@ -37,12 +37,15 @@ export default function BaseLayout() {
 
       if (detectedLanguage) {
          setLanguage(detectedLanguage);
+         i18n.changeLanguage(detectedLanguage);
       } else {
          if (navigator.languages[0].toLowerCase().startsWith('tr')) {
             localStorage.setItem('lang', 'tr');
             setLanguage('tr');
+            i18n.changeLanguage('tr');
          } else {
             localStorage.setItem('lang', 'en');
+            i18n.changeLanguage('en');
          }
       }
 
