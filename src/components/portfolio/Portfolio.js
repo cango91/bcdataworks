@@ -1,7 +1,6 @@
 import React from 'react';
 import PortfolioBlock from "./PortfolioBlock";
 import {Box, Grid} from "@mui/material";
-import {info} from "../../info/Info.en";
 import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
