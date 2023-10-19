@@ -71,6 +71,7 @@ export default function BaseLayout() {
                   <Route exact path={'/about'} element={<About />} />
                   <Route exact path={'/portfolio'} element={<Portfolio />} />
                   <Route exact path={'/services'} element={<Services />} />
+                  <Route path={"/*"} element={<Home />} />
                </Routes>
             </Grid>
             <Grid item>
